@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="August Melendez">
+    <meta name="description" content="Request a commission!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Oxygen:wght@300;400;700&family=Rajdhani:wght@300;400;500;600;700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>August Melendez: Request a Commission</title>
+</head>
+
+<body>
+    <header>
+        <span>August Melendez: Lover of Geeky and Nerdy Things</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome!</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="active"><a href="commissions.html">Request a Commission</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Request a Commission</h1>
+
+        <form method="get" class="myForm" action="thankyou.html">
+
+            <fieldset>
+                <legend>Client Information</legend>
+                <p>Please fill out the form below! Fields marked with astericks are
+                    required.</p>
+                <label>*Username (please specify the platform for this username so that I can identify and contact
+                    you!):<input type="text" name="username" required></label>
+                <label>*First Name: <input type="text" name="fname" required></label>
+                <label>*Last Name: <input type="text" name="lname" required></label>
+                <label>*Cellphone Number: <input type="tel" name="phone" required></label>
+                <label>*Email: <input type="email" name="email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirmation</legend>
+                <p>By checking this bullet point, you confirm that you are above the age of 18.</p>
+                <label><input type="checkbox" name="method" value="yes" required>*I am above the age of 18.</label>
+                <p>By checking this bullet point, you confirm that you read through my terms of service and you
+                    understand said terms and conditions. You understand that all prices are listed in USD, and you
+                    understand that I have the right to cancel or turn down a
+                    commission for any reason, and that full refunds are available ONLY BEFORE the sketch/lineart phase
+                    with the exception that I am unable to complete the commission if I've already begun.</p>
+                <label><input type="checkbox" name="method" value="yes" required>*I understand.</label>
+                <p>By checking this bullet point, you confirm that you understand what I will and will not draw for your
+                    commission.</p>
+                <label><input type="checkbox" name="method" value="yes" required>*I understand.</label>
+            </fieldset>
+            <br>
+            <hr>
+            <br>
+            <fieldset>
+                <legend>Description of Your Commission</legend>
+                <label>Please provide a description of what character you would like from your commission and be as
+                    thorough as you can!
+                    <textarea name="description" required></textarea>
+                </label>
+                <label>Please provide references of the character you want commissioned! File formats accepted are PNG,
+                    JPG, and PDF.
+                    <input type="file" accept=".png, .jpg, .pdf, .jpeg" multiple required>
+                </label>
+                <label>Please choose the app in which you will send the payment through:
+                    <select name="payment">
+                        <option value="none">Please Select</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="venmo">Venmo</option>
+                        <option value="cashapp">CashApp</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Prices: Chibi</legend>
+                <label><input type="radio" name="method" value="headshotflat">Headshot w/ Flat Colors ($4
+                    USD)</label>
+                <label><input type="radio" name="method" value="headshotfull">Fully-Rendered Headshot ($6
+                    USD)</label>
+                <label><input type="radio" name="method" value="halfbodyflat">Half-Body w/ Flat Colors ($6
+                    USD)</label>
+                <label><input type="radio" name="method" value="halfbodyfull">Headshot w/ Flat Colors ($8
+                    USD)</label>
+                <label><input type="radio" name="method" value="fullbodyflat">Full-Body w/ Flat Colors ($8
+                    USD)</label>
+                <label><input type="radio" name="method" value="fullbodyfull">Fully-Rendered Full-Body ($10
+                    USD)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Prices: Headshot/Bust Portrait</legend>
+                <label><input type="radio" name="method" value="sketch">Sketch ($25 USD)</label>
+                <label><input type="radio" name="method" value="lineart">Lineart ($30 USD)</label>
+                <label><input type="radio" name="method" value="flatcolors">Flat Colors ($35 USD)</label>
+                <label><input type="radio" name="method" value="fullyrendered">Fully Rendered ($45 USD)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Prices: Half-Body</legend>
+                <label><input type="radio" name="method" value="sketch">Sketch ($30 USD)</label>
+                <label><input type="radio" name="method" value="lineart">Lineart ($40 USD)</label>
+                <label><input type="radio" name="method" value="flatcolors">Flat Colors ($45 USD)</label>
+                <label><input type="radio" name="method" value="fullyrendered">Fully Rendered ($60 USD)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Prices: Full-Body</legend>
+                <label><input type="radio" name="method" value="sketch">Sketch ($35 USD)</label>
+                <label><input type="radio" name="method" value="lineart">Lineart ($45 USD)</label>
+                <label><input type="radio" name="method" value="flatcolors">Flat Colors ($50 USD)</label>
+                <label><input type="radio" name="method" value="fullyrendered">Fully Rendered ($70 USD)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Prices: Add-Ons</legend>
+                <label>Will your commission come with add-ons?
+                    <select name="yesorno">
+                        <option value="none">Please Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    </label>
+
+                    <p>Please select which add-ons you'd like for your commission:</p>
+                    <label><input type="checkbox" name="abstract" value="chosen"> Abstract background ($10 USD)</label>
+                    <label><input type="checkbox" name="realistic" value="chosen"> Realistic background ($25
+                        USD)</label>
+                    <label><input type="checkbox" name="extra" value="chosen"> Extra characters: 50% of the base price
+                        depending on the type of commission ordered.</label>
+
+                    <p>Complex/multiple elements:</p>
+                    <label><input type="checkbox" name="complexarmor" value="chosen">Complex
+                        armor/outfit ($10-$15 USD)</label>
+                    <p>Multiple extra limbs:</p>
+                    <label><input type="checkbox" name="onetotwo" value="chosen">1-2 limbs ($2
+                        USD)</label>
+                    <label><input type="checkbox" name="threetofour" value="chosen">3-4 limbs ($4 USD)</label>
+                    <label><input type="checkbox" name="fiveplus" value="chosen">5+ limbs ($6 USD)</label>
+                    <p>Multiple weapons:</p>
+                    <label><input type="checkbox" name="onetotwo" value="chosen">1-2 weapons ($3 USD)</label>
+                    <label><input type="checkbox" name="threetofour" value="chosen">3-4 weapons ($5 USD)</label>
+                    <label><input type="checkbox" name="fiveplus" value="chosen">5+ weapons ($7 USD)</label>
+                    <p>Miscellaneous:</p>
+                    <label><input type="checkbox" name="complexjewel" value="chosen">Complex jewelry/accessories ($5 USD)</label>
+                    <label><input type="checkbox" name="complextattoo" value="chosen">Complex tattoos: $5 USD</label>
+            </fieldset>
+            <br>
+            <hr>
+
+            <label>If you have any further comments or concerns, feel free to share them here:
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Send Commission Request">
+        </form>
+
+    </main>
+    <footer>
+        &copy; August Melendez &bull; Web Essentials
+    </footer>
+</body>
+
+</html>
